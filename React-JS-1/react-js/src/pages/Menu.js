@@ -50,6 +50,10 @@ function Menu() {
  return (
   <div className="App">
    <Tabel menu={menus} titel={titel} />
+   <Tabel
+    menu={menus.filter((data) => data.idkategori === 3)}
+    titel="MENU BUAH"
+   />
   </div>
  );
 }
