@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const url = "http://localhost:8000/api";
-let token = "dpycfkNyYR1KJlwFzC3TTchgB15W56RvHZuglkE4";
+let token = sessionStorage.getItem("token");
 
 export const link = axios.create({
   baseURL: url,

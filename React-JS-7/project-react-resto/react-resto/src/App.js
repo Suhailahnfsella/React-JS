@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Front from "./Front/Front";
 import Back from "./Back/Back";
+import Login from "./Back/Login";
+
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
@@ -12,6 +14,7 @@ function App() {
         <Route path="/" component={Front} exact />
         <Route path="/admin" component={Back} />
         <Route path="/home" component={Front} />
+        <Route path="/login" component={Login} />
       </Router>
     </div>
   );
